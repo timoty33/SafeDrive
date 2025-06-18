@@ -1,0 +1,12 @@
+{
+  "status_config": false,
+
+  "idioma": "en-US",
+  "alerta": 1,
+  "vibracao": 1,
+  "alerta_sono_estagio_1": 1,
+  "alerta_sono_estagio_2": 1,
+  "alerta_sono_estagio_3": 1,
+  "alerta_distracao": 1,
+  "alerta_celular": 1
+}

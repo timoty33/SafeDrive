@@ -1,0 +1,35 @@
+Idiomas:
+    pt-BR   →   Português (Brasil)
+    pt-PT   →   Português (Portugal)
+    en-US   →   Inglês (Estados Unidos)
+    es-ES   →   Espanhol (Espanha)
+
+Alertas:                     Vibração:
+    1 -                          1 - Fraco
+    2 -                          2 - Médio
+    3 -                          3 - Forte
+
+Alerta de Sono 1° Estágio:
+    1 - Apenas vibração
+    2 - Apenas alarme
+    3 - Alarme e vibração
+
+Alerta de Sono 2° Estágio:
+    1 - Apenas vibração
+    2 - Apenas alarme
+    3 - Alarme e vibração
+
+Alerta de Sono 3° Estágio:
+    1 - Apenas vibração
+    2 - Apenas alarme
+    3 - Alarme e vibração
+
+Alerta de Distração:
+    1 - Apenas vibração
+    2 - Apenas alarme
+    3 - Alarme e vibração
+
+Alerta de Uso de Celular:
+    1 - Apenas vibração
+    2 - Apenas alarme
+    3 - Alarme e vibração
