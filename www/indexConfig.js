@@ -16,6 +16,18 @@ function traduzir(idioma) {
   const titleAlerta = document.getElementById("titleAlerta");
 
   const titleVibracao = document.getElementById("titleVibracao");
+  const optionFraco = document.getElementById("optionFraco");
+  const optionMedio = document.getElementById("optionMedio");
+  const optionForte = document.getElementById("optionForte");
+
+  const titleAlertaCelular = document.getElementById("titleAlertaCelular");
+
+  const optionVibracaoElements =
+    document.getElementsByClassName("optionVibracao");
+  const optionAlertaElements = document.getElementsByClassName("optionAlerta");
+  const optionAlertaVibracaoElements = document.getElementsByClassName(
+    "optionAlertaVibracao"
+  );
 
   switch (idioma) {
     case "pt-BR":
@@ -28,7 +40,24 @@ function traduzir(idioma) {
       optionPtPt.textContent = "Português - Portugal";
 
       titleAlerta.textContent = "Alerta de Som";
+
       titleVibracao.textContent = "Alerta de Vibração";
+      optionFraco.textContent = "1 - Fraco";
+      optionMedio.textContent = "2 - Médio";
+      optionForte.textContent = "3 - Forte";
+
+      titleAlertaCelular.textContent = "Alerta de Uso de Celular";
+
+      // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionVibracaoElements.length; i++) {
+        optionVibracaoElements[i].textContent = "1 - Vibração";
+      }
+      for (let i = 0; i < optionAlertaElements.length; i++) {
+        optionAlertaElements[i].textContent = "2 - Alerta";
+      }
+      for (let i = 0; i < optionAlertaVibracaoElements.length; i++) {
+        optionAlertaVibracaoElements[i].textContent = "3 - Alerta e Vibração";
+      }
       break;
 
     case "en-US":
@@ -41,7 +70,24 @@ function traduzir(idioma) {
       optionPtPt.textContent = "Portuguese - Portugal";
 
       titleAlerta.textContent = "Sound Alert";
+
       titleVibracao.textContent = "Vibration Alert";
+      optionFraco.textContent = "1 - Weak";
+      optionMedio.textContent = "2 - Medium";
+      optionForte.textContent = "3 - Strong";
+
+      titleAlertaCelular.textContent = "Cell Phone Usage Alert";
+
+      // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionVibracaoElements.length; i++) {
+        optionVibracaoElements[i].textContent = "1 - Vibration";
+      }
+      for (let i = 0; i < optionAlertaElements.length; i++) {
+        optionAlertaElements[i].textContent = "2 - Alert";
+      }
+      for (let i = 0; i < optionAlertaVibracaoElements.length; i++) {
+        optionAlertaVibracaoElements[i].textContent = "3 - Alert and Vibration";
+      }
       break;
 
     case "es-ES":
@@ -54,7 +100,24 @@ function traduzir(idioma) {
       optionPtPt.textContent = "Portugués - Portugal";
 
       titleAlerta.textContent = "Alerta de Sonido";
+
       titleVibracao.textContent = "Alerta de Vibración";
+      optionFraco.textContent = "1 - Débil";
+      optionMedio.textContent = "2 - Medio";
+      optionForte.textContent = "3 - Fuerte";
+
+      titleAlertaCelular.textContent = "Alerta de Uso de Celular";
+
+      // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionVibracaoElements.length; i++) {
+        optionVibracaoElements[i].textContent = "1 - Vibración";
+      }
+      for (let i = 0; i < optionAlertaElements.length; i++) {
+        optionAlertaElements[i].textContent = "2 - Alerta";
+      }
+      for (let i = 0; i < optionAlertaVibracaoElements.length; i++) {
+        optionAlertaVibracaoElements[i].textContent = "3 - Alerta y Vibración";
+      }
       break;
 
     case "pt-PT":
@@ -67,7 +130,24 @@ function traduzir(idioma) {
       optionPtPt.textContent = "Português - Portugal";
 
       titleAlerta.textContent = "Alerta de Som";
+
       titleVibracao.textContent = "Alerta de vibração";
+      optionFraco.textContent = "1 - Fraco";
+      optionMedio.textContent = "2 - Médio";
+      optionForte.textContent = "3 - Forte";
+
+      titleAlertaCelular.textContent = "Alerta de Uso de Telemóvel";
+
+      // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionVibracaoElements.length; i++) {
+        optionVibracaoElements[i].textContent = "1 - Vibração";
+      }
+      for (let i = 0; i < optionAlertaElements.length; i++) {
+        optionAlertaElements[i].textContent = "2 - Alerta";
+      }
+      for (let i = 0; i < optionAlertaVibracaoElements.length; i++) {
+        optionAlertaVibracaoElements[i].textContent = "3 - Alerta e Vibração";
+      }
       break;
   }
 }
