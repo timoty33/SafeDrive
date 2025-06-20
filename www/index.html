@@ -48,7 +48,9 @@
 
       <div class="option-sono">
         <div class="option-1 option">
-          <label for="sono-1" class="label">Sono - Estágio 1</label>
+          <label for="sono-1" class="label" id="titleSono-1"
+            >Sono - Estágio 1</label
+          >
           <select id="sono-1" name="sono-1">
             <option value="1" class="optionVibracao">1 - Vibração</option>
             <option value="2" class="optionAlerta">2 - Alerta</option>
@@ -59,7 +61,9 @@
         </div>
 
         <div class="option-2 option">
-          <label for="sono-2" class="label">Sono - Estágio 2</label>
+          <label for="sono-2" class="label" id="titleSono-2"
+            >Sono - Estágio 2</label
+          >
           <select id="sono-2" name="sono-2">
             <option value="1" class="optionVibracao">1 - Vibração</option>
             <option value="2" class="optionAlerta">2 - Alerta</option>
@@ -70,7 +74,9 @@
         </div>
 
         <div class="option-3 option">
-          <label for="sono-3" class="label">Sono - Estágio 3</label>
+          <label for="sono-3" class="label" id="titleSono-3"
+            >Sono - Estágio 3</label
+          >
           <select id="sono-3" name="sono-3">
             <option value="1" class="optionVibracao">1 - Vibração</option>
             <option value="2" class="optionAlerta">2 - Alerta</option>
@@ -96,7 +102,7 @@
         </div>
 
         <div class="option-2 option">
-          <label for="alerta-distracao" class="label"
+          <label for="alerta-distracao" class="label" id="titleAlertaDistracao"
             >Alerta de Distração</label
           >
           <select id="alerta-distracao" name="alerta-distracao">
@@ -108,7 +114,7 @@
           </select>
         </div>
       </div>
-      <button id="button-enviar" onclick="enviar()" class="button-enviar">
+      <button id="button-enviar" onclick="salvarConfig()" class="button-enviar">
         Enviar
       </button>
     </div>

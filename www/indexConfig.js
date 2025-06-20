@@ -20,7 +20,13 @@ function traduzir(idioma) {
   const optionMedio = document.getElementById("optionMedio");
   const optionForte = document.getElementById("optionForte");
 
+  const titleSono1 = document.getElementById("titleSono-1");
+  const titleSono2 = document.getElementById("titleSono-2");
+  const titleSono3 = document.getElementById("titleSono-3");
+
   const titleAlertaCelular = document.getElementById("titleAlertaCelular");
+
+  const titleAlertaDistracao = document.getElementById("titleAlertaDistracao");
 
   const optionVibracaoElements =
     document.getElementsByClassName("optionVibracao");
@@ -46,7 +52,13 @@ function traduzir(idioma) {
       optionMedio.textContent = "2 - Médio";
       optionForte.textContent = "3 - Forte";
 
+      titleSono1.textContent = "Sono - Estágio 1";
+      titleSono2.textContent = "Sono - Estágio 2";
+      titleSono3.textContent = "Sono - Estágio 3";
+
       titleAlertaCelular.textContent = "Alerta de Uso de Celular";
+
+      titleAlertaDistracao.textContent = "Alerta de Distração";
 
       // Itere sobre os elementos e defina o textContent
       for (let i = 0; i < optionVibracaoElements.length; i++) {
@@ -76,7 +88,13 @@ function traduzir(idioma) {
       optionMedio.textContent = "2 - Medium";
       optionForte.textContent = "3 - Strong";
 
+      titleSono1.textContent = "Sleep - Stage 1";
+      titleSono2.textContent = "Sleep - Stage 2";
+      titleSono3.textContent = "Sleep - Stage 3";
+
       titleAlertaCelular.textContent = "Cell Phone Usage Alert";
+
+      titleAlertaDistracao.textContent = "Distraction Alert";
 
       // Itere sobre os elementos e defina o textContent
       for (let i = 0; i < optionVibracaoElements.length; i++) {
@@ -106,7 +124,13 @@ function traduzir(idioma) {
       optionMedio.textContent = "2 - Medio";
       optionForte.textContent = "3 - Fuerte";
 
+      titleSono1.textContent = "Sueño - Etapa 1";
+      titleSono2.textContent = "Sueño - Etapa 2";
+      titleSono3.textContent = "Sueño - Etapa 3";
+
       titleAlertaCelular.textContent = "Alerta de Uso de Celular";
+
+      titleAlertaDistracao.textContent = "Alerta de Distracción";
 
       // Itere sobre os elementos e defina o textContent
       for (let i = 0; i < optionVibracaoElements.length; i++) {
@@ -136,7 +160,13 @@ function traduzir(idioma) {
       optionMedio.textContent = "2 - Médio";
       optionForte.textContent = "3 - Forte";
 
+      titleSono1.textContent = "Sono - Etapa 1";
+      titleSono2.textContent = "Sono - Etapa 2";
+      titleSono3.textContent = "Sono - Etapa 3";
+
       titleAlertaCelular.textContent = "Alerta de Uso de Telemóvel";
+
+      titleAlertaDistracao.textContent = "Alerta de Distração";
 
       // Itere sobre os elementos e defina o textContent
       for (let i = 0; i < optionVibracaoElements.length; i++) {
@@ -169,8 +199,32 @@ async function carregarConfigs() {
   document.getElementById("sono-1").value = configs["alerta_sono_estagio_1"];
   document.getElementById("sono-2").value = configs["alerta_sono_estagio_2"];
   document.getElementById("sono-3").value = configs["alerta_sono_estagio_3"];
+  document.getElementById("alerta-celular").value = configs["alerta_celular"];
+  document.getElementById("alerta-distracao").value =
+    configs["alerta_distracao"];
 
   traduzir(configs["idioma"]);
+}
+
+async function salvarConfig() {
+  var config = {
+    status_config: true,
+
+    idioma: document.getElementById("idioma").value,
+    alerta: document.getElementById("alerta").value,
+    vibracao: document.getElementById("vibracao").value,
+    alerta_sono_estagio_1: document.getElementById("sono-1").value,
+    alerta_sono_estagio_2: document.getElementById("sono-2").value,
+    alerta_sono_estagio_3: document.getElementById("sono-3").value,
+    alerta_distracao: document.getElementById("alerta-distracao").value,
+    alerta_celular: document.getElementById("alerta-celular").value,
+  };
+
+  eel.salvarJson(config)();
+
+  console.log("Configurações Salvas!");
+
+  window.close();
 }
 
 // <-- Code -->
