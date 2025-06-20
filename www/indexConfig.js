@@ -152,6 +152,27 @@ function traduzir(idioma) {
   }
 }
 
+// <-- Functions Eel -->
+async function carregarConfigs() {
+  var configs = await eel.carregarConfigs()();
+  console.log(configs);
+
+  if (configs["status_config"] == false) {
+    alert(
+      "Você ainda não fez sua configuração inical, por favor faça antes de iniciar."
+    );
+  }
+
+  document.getElementById("idioma").value = configs["idioma"];
+  document.getElementById("alerta").value = configs["alerta"];
+  document.getElementById("vibracao").value = configs["vibracao"];
+  document.getElementById("sono-1").value = configs["alerta_sono_estagio_1"];
+  document.getElementById("sono-2").value = configs["alerta_sono_estagio_2"];
+  document.getElementById("sono-3").value = configs["alerta_sono_estagio_3"];
+
+  traduzir(configs["idioma"]);
+}
+
 // <-- Code -->
 
 // Reconhecimento e troca de idioma.
@@ -161,3 +182,6 @@ document.getElementById("idioma").addEventListener("change", function () {
   console.log(idioma);
   traduzir(idioma);
 });
+
+// Carregando configurações
+carregarConfigs();
