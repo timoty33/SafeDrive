@@ -3,9 +3,9 @@
   "idioma": "pt-BR",
   "alerta": "1",
   "vibracao": "1",
-  "alerta_sono_estagio_1": "3",
-  "alerta_sono_estagio_2": "3",
-  "alerta_sono_estagio_3": "3",
-  "alerta_distracao": "2",
-  "alerta_celular": "1"
+  "alerta_sono_estagio_1": "0",
+  "alerta_sono_estagio_2": "0",
+  "alerta_sono_estagio_3": "0",
+  "alerta_distracao": "0",
+  "alerta_celular": "0"
 }

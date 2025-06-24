@@ -28,6 +28,7 @@ function traduzir(idioma) {
 
   const titleAlertaDistracao = document.getElementById("titleAlertaDistracao");
 
+  const optionDesligado = document.getElementsByClassName("optionDesligado");
   const optionVibracaoElements =
     document.getElementsByClassName("optionVibracao");
   const optionAlertaElements = document.getElementsByClassName("optionAlerta");
@@ -61,6 +62,9 @@ function traduzir(idioma) {
       titleAlertaDistracao.textContent = "Alerta de Distração";
 
       // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionDesligado.length; i++) {
+        optionDesligado[i].textContent = "0 - Desligado";
+      }
       for (let i = 0; i < optionVibracaoElements.length; i++) {
         optionVibracaoElements[i].textContent = "1 - Vibração";
       }
@@ -97,6 +101,9 @@ function traduzir(idioma) {
       titleAlertaDistracao.textContent = "Distraction Alert";
 
       // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionDesligado.length; i++) {
+        optionDesligado[i].textContent = "0 - Off";
+      }
       for (let i = 0; i < optionVibracaoElements.length; i++) {
         optionVibracaoElements[i].textContent = "1 - Vibration";
       }
@@ -133,6 +140,9 @@ function traduzir(idioma) {
       titleAlertaDistracao.textContent = "Alerta de Distracción";
 
       // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionDesligado.length; i++) {
+        optionDesligado[i].textContent = "0 - Apagado";
+      }
       for (let i = 0; i < optionVibracaoElements.length; i++) {
         optionVibracaoElements[i].textContent = "1 - Vibración";
       }
@@ -169,6 +179,9 @@ function traduzir(idioma) {
       titleAlertaDistracao.textContent = "Alerta de Distração";
 
       // Itere sobre os elementos e defina o textContent
+      for (let i = 0; i < optionDesligado.length; i++) {
+        optionDesligado[i].textContent = "0 - Desligado";
+      }
       for (let i = 0; i < optionVibracaoElements.length; i++) {
         optionVibracaoElements[i].textContent = "1 - Vibração";
       }
